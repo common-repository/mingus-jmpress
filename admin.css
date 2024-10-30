@@ -1,0 +1,54 @@
+.page-list li,
+.page-list li .form-row{
+	clear: both;
+}
+.page-list li .form-row .cell{
+	display: inline-block;
+	width: 18%;
+	font-size: 1em;
+}
+.page-list li .form-row .cell label{
+	display: block;
+	font-weight: bold;
+}
+.page-list li .form-row .cell input{
+	width: 80%;
+}
+#preview-container{
+	display: block;
+	clear: both;
+	position: relative;
+	width: 800px;
+	height: 450px;
+	border: 1px solid #000;
+	margin: 0 auto;
+	overflow: hidden;
+	perspective: 400px;
+  	perspective-origin: 50% 50%;
+}
+#preview{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: scale(1);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.preview-page{
+	border: 1px solid #c00;
+	width: 80px;
+	height: 45px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.15);
+	position: absolute;
+	margin-left: -40px;
+	margin-top: -22px;
+}
+.preview-controls{
+	text-align: center;
+}
+.page .form-row{
+	display: none;
+}
